@@ -1,0 +1,82 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: orchid;
+  height: 100vh;
+  top: 0;
+  position: relative;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid white;
+  width: 300px;
+  padding: 10px;
+  margin: 5% 40%;
+  box-shadow: 10px 10px 14px;
+  position: absolute;
+}
+.buttonsection {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* width: 30vw; */
+  /* margin-left: 30%; */
+}
+input {
+  width: 93%;
+  padding: 5px 10px;
+  height: 50px;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: digital;
+  text-align: right;
+  background: lightgrey;
+  overflow-wrap: break-word;
+}
+.result {
+  padding: 5px 10px;
+  font-size: 100px;
+  word-wrap: wrap;
+  font-weight: 900;
+  font-family: didital;
+  text-align: right;
+  height: 100px;
+  background-color: lightslategray;
+}
+
+button {
+  position: relative;
+  padding: 5px 10px;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: didital;
+  background: rgb(5, 4, 4);
+  color: white;
+  transition: all 100ms ease-in-out;
+  z-index: 1;
+}
+.submitButton {
+  width: 100%;
+  background-color: red;
+}
+button::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+
+  background: #e1b5bf;
+  transition: all 0.35s;
+  z-index: -1;
+}
+button:hover:after {
+  width: 100%;
+  color: black;
+}
+button:hover {
+  color: black;
+  transform: scale(1.06);
+}
