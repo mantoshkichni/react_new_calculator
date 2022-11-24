@@ -16,6 +16,7 @@ export default function App() {
     setAns(eval(value));
     console.log(ans);
     // setValue("");
+    //just for github repository;;;
   };
 
   return (
